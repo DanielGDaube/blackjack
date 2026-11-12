@@ -26,5 +26,8 @@ public class Blackjack {
         player2Hand.print();
         System.out.println("Score:");
         System.out.println(player2Hand.getValue());
+
+        System.out.println("The winner is:");
+        System.out.println((player1Hand.getValue() > player2Hand.getValue() && player1Hand.getValue() < 22) ? player1 : player2);
     }
 }
