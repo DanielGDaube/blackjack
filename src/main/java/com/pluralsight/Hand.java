@@ -12,9 +12,19 @@ import java.util.ArrayList;
  */
 public class Hand {
     private ArrayList<Card> cards;
+    private String name;
 
     public Hand() {
         cards = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Hand setName(String name) {
+        this.name = name;
+        return this;
     }
 
     // A Card is dealt to the Hand and the Hand is responsible
