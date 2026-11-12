@@ -13,5 +13,9 @@ public class Blackjack {
         String player2 = scanner.nextLine();
         Hand player2Hand = new Hand();
 
+        Deck deck = new Deck();
+        deck.shuffle();
+        player1Hand.deal(deck.deal());
+        player2Hand.deal(deck.deal());
     }
 }
