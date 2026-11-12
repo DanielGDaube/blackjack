@@ -17,5 +17,14 @@ public class Blackjack {
         deck.shuffle();
         player1Hand.deal(deck.deal());
         player2Hand.deal(deck.deal());
+
+        System.out.println(player1 + "'s hand:");
+        player1Hand.print();
+        System.out.println("Score:");
+        System.out.println(player1Hand.getValue());
+        System.out.println(player2 + "'s hand:");
+        player2Hand.print();
+        System.out.println("Score:");
+        System.out.println(player2Hand.getValue());
     }
 }
